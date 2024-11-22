@@ -1,0 +1,191 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block body %}
+<link rel="stylesheet" href="{% static 'math_quiz.css' %}">
+
+  <div class="container">
+          <div class="math_form">
+                
+        <form method="post">
+            {% csrf_token %}
+            <div class="math_question">
+                <div class="math_img">
+                    <img src="{% static 'images/r1.jpg' %}" alt="">
+                </div>
+            
+               <div class="inputs">
+                    <p>A. <input type="radio" name="question1" value="A"></p>
+                    <p>B. <input type="radio" name="question1" value="B"></p>
+                    <p>C. <input type="radio" name="question1" value="C"></p>
+                    <p>D. <input type="radio" name="question1" value="D"></p>
+                    <p>E. <input type="radio" name="question1" value="E"></p>
+               </div>
+
+            </div>
+            <br>
+
+            <div class="math_question">
+                <div class="math_img">
+                    <img src="{% static 'images/r2.jpg' %}" alt="">
+                </div>
+            
+                <div class="inputs">
+                    <p>A. <input type="radio" name="question2" value="A"></p>
+                    <p>B. <input type="radio" name="question2" value="B"></p>
+                    <p>C. <input type="radio" name="question2" value="C"></p>
+                    <p>D. <input type="radio" name="question2" value="D"></p>
+                    <p>E. <input type="radio" name="question2" value="E"></p>
+               </div>
+
+
+            </div>
+            <br>
+
+            <div class="math_question">
+                <div class="math_img">
+                    <img src="{% static 'images/r3.jpg' %}" alt="">
+                </div>
+            
+                <div class="inputs">
+                    <p>A. <input type="radio" name="question3" value="A"></p>
+                    <p>B. <input type="radio" name="question3" value="B"></p>
+                    <p>C. <input type="radio" name="question3" value="C"></p>
+                    <p>D. <input type="radio" name="question3" value="D"></p>
+                    <p>E. <input type="radio" name="question3" value="E"></p>
+               </div>
+
+
+            </div>
+            <br>
+
+            <div class="math_question">
+                <div class="math_img">
+                    <img src="{% static 'images/r4.jpg' %}" alt="">
+                </div>
+            
+                <div class="inputs">
+                    <p>A. <input type="radio" name="question4" value="A"></p>
+                    <p>B. <input type="radio" name="question4" value="B"></p>
+                    <p>C. <input type="radio" name="question4" value="C"></p>
+                    <p>D. <input type="radio" name="question4" value="D"></p>
+                    <p>E. <input type="radio" name="question4" value="E"></p>
+               </div>
+
+            </div>
+            <br>
+
+            <div class="math_question">
+                <div class="math_img">
+                    <img src="{% static 'images/r5.jpg' %}" alt="">
+                </div>
+            
+                <div class="inputs">
+                    <p>A. <input type="radio" name="question5" value="A"></p>
+                    <p>B. <input type="radio" name="question5" value="B"></p>
+                    <p>C. <input type="radio" name="question5" value="C"></p>
+                    <p>D. <input type="radio" name="question5" value="D"></p>
+                    <p>E. <input type="radio" name="question5" value="E"></p>
+               </div>
+
+
+            </div>
+            <br>
+
+            <div class="math_question">
+                <div class="math_img">
+                    <img src="{% static 'images/r6.jpg' %}" alt="">
+                </div>
+            
+                <div class="inputs">
+                    <p>A. <input type="radio" name="question6" value="A"></p>
+                    <p>B. <input type="radio" name="question6" value="B"></p>
+                    <p>C. <input type="radio" name="question6" value="C"></p>
+                    <p>D. <input type="radio" name="question6" value="D"></p>
+                    <p>E. <input type="radio" name="question6" value="E"></p>
+               </div>
+
+
+            </div>
+            <br>
+
+            <div class="math_question">
+                <div class="math_img">
+                    <img src="{% static 'images/r7.jpg' %}" alt="">
+                </div>
+
+                <div class="inputs">
+                    <p>A. <input type="radio" name="question7" value="A"></p>
+                    <p>B. <input type="radio" name="question7" value="B"></p>
+                    <p>C. <input type="radio" name="question7" value="C"></p>
+                    <p>D. <input type="radio" name="question7" value="D"></p>
+                    <p>E. <input type="radio" name="question7" value="E"></p>
+               </div>
+
+
+            </div>
+            <br>
+
+            <div class="math_question">
+                <div class="math_img">
+                    <img src="{% static 'images/r8.jpg' %}" alt="">
+                </div>
+            
+                <div class="inputs">
+                    <p>A. <input type="radio" name="question8" value="A"></p>
+                    <p>B. <input type="radio" name="question8" value="B"></p>
+                    <p>C. <input type="radio" name="question8" value="C"></p>
+                    <p>D. <input type="radio" name="question8" value="D"></p>
+                    <p>E. <input type="radio" name="question8" value="E"></p>
+               </div>
+
+
+            </div>
+            <br>
+
+            <div class="math_question">
+                <div class="math_img">
+                    <img src="{% static 'images/r9.jpg' %}" alt="">
+                </div>
+            
+                <div class="inputs">
+                    <p>A. <input type="radio" name="question9" value="A"></p>
+                    <p>B. <input type="radio" name="question9" value="B"></p>
+                    <p>C. <input type="radio" name="question9" value="C"></p>
+                    <p>D. <input type="radio" name="question9" value="D"></p>
+                    <p>E. <input type="radio" name="question9" value="E"></p>
+               </div>
+
+
+            </div>
+            <br>
+
+            <div class="math_question">
+                <div class="math_img">
+                    <img src="{% static 'images/r10.jpg' %}" alt="">
+                </div>
+            
+                <div class="inputs">
+                    <p>A. <input type="radio" name="question10" value="A"></p>
+                    <p>B. <input type="radio" name="question10" value="B"></p>
+                    <p>C. <input type="radio" name="question10" value="C"></p>
+                    <p>D. <input type="radio" name="question10" value="D"></p>
+                    <p>E. <input type="radio" name="question10" value="E"></p>
+               </div>
+
+            </div>
+            <br>
+        
+            
+
+            <button type="submit">Bitir</button>
+        </form>
+    </div>
+
+    {% if score %}
+        <h3>Neticeniz:</h3>
+        <p>Doğru: {{ score.correct }}</p>
+        <p>Yanlış: {{ score.incorrect }}</p>
+    {% endif %}
+  </div>
+{% endblock %}

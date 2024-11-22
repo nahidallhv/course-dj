@@ -1,0 +1,8 @@
+<svg preserveAspectRatio="xMidYMid meet" data-bbox="68.2 69.1 63.6 63.7" viewBox="68.2 69.1 63.6 63.7" height="200" width="200" xmlns="http://www.w3.org/2000/svg" data-type="color" role="presentation" aria-hidden="true" aria-label=""><defs><style>#comp-k8ykrznq svg [data-color="1"] {fill: #8F98FF;}
+#comp-k8ykrznq svg [data-color="2"] {fill: #192A88;}</style></defs>
+    <g>
+        <path d="M131.8 100.9c0-17.6-14.2-31.8-31.8-31.8-8.8 0-16.7 3.6-22.5 9.3l45 45c5.7-5.7 9.3-13.7 9.3-22.5z" fill="#8f98ff" data-color="1"></path>
+        <path d="M77.5 78.5l-9.3-9.3v63.6h63.6l-9.3-9.3-45-45zm1.7 43.3v-26l26 26h-26z" fill="#192a88" data-color="2"></path>
+        <path fill="#8f98ff" d="M79.2 95.8v26h26l-26-26z" data-color="1"></path>
+    </g>
+</svg>

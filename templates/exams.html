@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block body %}
+
+    <link rel="stylesheet" href="{% static 'exams.css' %}">
+
+    <div class="container">
+        <div class="exams_type">
+            <div class="exams">
+                <div class="img_div">   <img src="{% static 'images/math.svg' %}" alt=""></div>
+             
+                <p>Riyaziyyat</p>
+                <a href="{% url 'exam:math_exam' %}"><button>Imtahana başla</button></a>
+            </div>
+
+            <div class="exams">
+                <div class="img_div"><img src="{% static 'images/open-book.png' %}" alt=""></div>
+                <p>Azərbaycan dili</p>
+                <button>Imtahana başla</button>
+            </div>
+
+            <div class="exams">
+                <div class="img_div"><img src="{% static 'images/science.svg' %}" alt=""></div>
+                <p>Informatika</p>
+                <button>Imtahana başla</button>
+            </div>
+
+            <div class="exams">
+                <div class="img_div"> <img src="{% static 'images/open-book.png' %}" alt=""></div>
+                <p>Ingilis dili</p>
+                <button>Imtahana başla</button>
+            </div>
+            {% comment %} №№№№№№№№№№№№№№№№№№№№№№№№№ {% endcomment %}
+
+            <div class="exams">
+                <div class="img_div"><img src="{% static 'images/math.svg' %}" alt=""></div>
+                <p>Tarix</p>
+                <button>Imtahana başla</button>
+            </div>
+
+            <div class="exams">
+                <div class="img_div"><img src="{% static 'images/science.svg' %}" alt=""></div>
+                <p>Fizika</p>
+                <button>Imtahana başla</button>
+            </div>
+
+            <div class="exams">
+                <div class="img_div"><img src="{% static 'images/open-book.png' %}" alt=""></div>
+                <p>Kimya</p>
+                <button>Imtahana başla</button>
+            </div>
+
+            <div class="exams">
+                <div class="img_div"> <img src="{% static 'images/math.svg' %}" alt=""></div>
+                <p>Coğrafiya</p>
+                <button>Imtahana başla</button>
+            </div>
+
+
+        </div>
+    </div>
+
+{% endblock body %}
+
+    

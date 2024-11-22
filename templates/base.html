@@ -1,0 +1,95 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'base.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+        <nav class="navbar">
+          <div class="logo">
+            <div class="logo-img">
+              <img src="{% static 'images\logo.svg' %}" alt="logo" />
+            </div>
+            <h1 class="logo-text">Online Lessons</h1>
+          </div>
+          <ul class="nav-links" id="nav-links">
+            <li><a href="{% url 'home' %}">Ana səhifə</a></li>
+            <li><a href="{% url 'video' %}">Video dərslər</a></li>
+            <li><a href="{% url 'exam:exams' %}">İmtahanlar</a></li>
+            <li><a href="{% url 'about' %}">Haqqımızda</a></li>
+            <li><a href="{% url 'contact' %}">Əlaqə</a></li>
+            <li></li>
+            {% if request.user.is_authenticated %}
+        
+                <div class="logout_div">
+                  <a href="{% url 'account:logout' %}"><i class="fa-solid fa-right-from-bracket"></i></a>
+                </div>
+                {% else %}
+                    <li class="nav-li-login">
+                
+                      <i class="fa-solid fa-circle-user"></i>
+                
+                      <a href="{% url 'account:register' %}" class="login">Qeydiyyatdan kec</a>
+                    </li> 
+                {% endif %}
+       
+          </ul>
+
+          <div class="menu-icon" onclick="toggleMenu()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </nav>
+      </header>
+    </div>
+
+    {% block body %}
+    
+    {% comment %} ##################### {% endcomment %}
+    {% endblock body %}
+
+
+    <div class="container">
+        <footer class="footer">
+        <div class="footer-logo">
+          <div class="logo">
+            <div class="logo-img">
+              <img src="{% static 'images/logo.svg' %}" alt="logo" />
+            </div>
+            <h1 class="logo-text">Online Lessons</h1>
+          </div>
+        </div>
+        <div class="footer-links">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#our-services">Our Services</a></li>
+            <li><a href="#Assignments">Assignments</a></li>
+            <li><a href="#Packages">Packages</a></li>
+            <li><a href="#learning-tools">Learning Tools</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <p>info@mysite.com</p>
+          <p>123-456-7890</p>
+        </div>
+        <div class="footer-copy">
+          <p>© 2024 by Online Lessons.</p>
+          <p>Powered and secured by Online Lessons</p>
+        </div>
+      </footer>
+    </div>
+    </div>
+    
+
+
+    
+</body>
+</html>

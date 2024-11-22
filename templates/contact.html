@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block body %}
+
+    <link rel="stylesheet" href="{% static 'contact.css' %}">
+
+
+    
+
+      <!-- ########################################################### -->
+    <div class="container">
+           <div class="section">
+            <div class="contact_div">
+                <div class="main_div">
+                    <h3>Bizimlə əlaqə</h3>
+
+                    <div class="form_div">
+                        <form action="#" method="post">
+                            <div class="form-name">
+
+                                <input placeholder="Adınız..." type="text" id="name" name="name" >
+                            </div>
+                        
+                            <div class="form-group">
+                                
+                                <textarea placeholder="Mesajınız..." id="message" name="message" rows="5"></textarea>
+                            </div>
+                            <button type="submit" class="comment-btn">Göndər</button>
+                        </form>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="contact_div2">
+            
+                <div class="texts">
+                  <h2>Online Lesson</h2>
+                </div>
+
+                <div class="info">
+                  <p>renaceferli17@gmail.com</p>
+                  <p>Azerbaycan, Naxçıvan</p>
+                  <p>+994 548 50 23</p>
+                </div>
+           
+              
+
+               
+            </div>
+
+       </div>
+  </div>
+    </div>
+{% endblock body %}
+
+    

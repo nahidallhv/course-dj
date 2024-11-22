@@ -1,0 +1,147 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block body %}
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+
+
+    <div class="container">
+
+        {% if messages %}
+          <ul class="messages">
+              {% for message in messages %}
+                  <li class="{{ message.tags }}">{{ message }}</li>
+              {% endfor %}
+          </ul>
+        {% endif %}
+
+        
+         <section class="homepage-content">
+        <div class="left-content">
+          <div class="left-content-text">
+            <h1>
+              Private <br />
+              Lessons <br />
+              Online
+            </h1>
+            <p>Don't Miss Out While You Are Away From School</p>
+            <div class="buttons">
+              <button class="btn book-lesson">Book a Lesson</button>
+              <button class="btn pick-package">Pick a Package</button>
+            </div>
+          </div>
+        </div>
+        <div class="right-content">
+          <img src="{% static 'images/girl-img.webp' %}" alt="Girl Image" class="girl-image" />
+        </div>
+      </section>
+      <section class="teaching-section">
+        <div class="teaching-left">
+          <h2>What Do I Teach?</h2>
+          <p>
+            I'm a paragraph. Click here to add <br />
+            your own text and edit me. It’s easy. <br />
+            Just click “Edit Text” or double click <br />
+            me to add your own content and <br />
+            make changes to the font.
+          </p>
+          <button class="btn">About Me</button>
+        </div>
+
+        <div class="teaching-right">
+          <div class="card-container">
+            <div class="card">
+              <h3>English</h3>
+              <div class="card-image">
+                <img src="{% static 'images/open-book.png' %}" alt="English subject" />
+              </div>
+              <p>
+                I'm a paragraph. Click here to add your<br />own text and edit
+                me. Let your users get<br />to know you.
+              </p>
+            </div>
+
+            <div class="card">
+              <h3>Science</h3>
+              <div class="card-image">
+                <img src="{% static 'images/science.svg' %}" alt="Science subject" />
+              </div>
+              <p>
+                I'm a paragraph. Click here to add your<br />own text and edit
+                me. Let your users get<br />to know you.
+              </p>
+            </div>
+
+            <div class="card">
+              <h3>History</h3>
+              <div class="card-image">
+                <img src="{% static 'images/history.svg' %}" alt="History subject" />
+              </div>
+              <p>
+                I'm a paragraph. Click here to add your<br />own text and edit
+                me. Let your users get<br />to know you.
+              </p>
+            </div>
+
+            <div class="card">
+              <h3>Math</h3>
+              <div class="card-image">
+                <img src="{% static 'images/math.svg' %}" alt="Math subject" />
+              </div>
+              <p>
+                I'm a paragraph. Click here to add your<br />own text and edit
+                me. Let your users get<br />to know you.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews-section">
+        <div class="reviews-left">
+          <h2>Reviews</h2>
+          <p>
+            I'm a paragraph. Click here to add <br />
+            your own text and edit me.
+          </p>
+        </div>
+
+        <div class="reviews-right">
+          <div class="slider">
+            <div class="slides">
+              <div class="slide">
+                “I'm a testimonial. Click to edit me and add text that says
+                something nice about you and your services. Let your customers
+                review you and tell their friends how great you are.”
+                <br />
+                <h6>Lisa, Dina's mom</h6>
+              </div>
+              <div class="slide">
+                “I'm a testimonial. Click to edit me and add text that says
+                something nice about you and your services.”
+                <br />
+                <h6>Dan, Sally's dad</h6>
+              </div>
+              <div class="slide">
+                “I'm a testimonial. Click to edit me and add text that says
+                something nice about you and your services. Let your customers
+                review you and tell their friends how great you are.”
+                <br />
+                <h6>Jason,Karen's dad</h6>
+              </div>
+            </div>
+          </div>
+          <div class="slider-dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+        </div>
+      </section>
+    </div>
+
+   
+
+      <script src="{% static 'home.js' %}"></script>
+     
+{% endblock body %}

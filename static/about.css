@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+.container{
+    max-width: 1440px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.section1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text_div,
+.image_div{
+    flex: 1;
+    padding: 10px;
+}
+
+.text_div h2{
+    line-height: 1.1em;
+    font-size: 56px;
+    width: 300px;
+}
+
+.text_div p{
+    line-height: 1.6em;
+    font-size: 18px;
+    margin-top: 40px;
+    width: 300px;
+}
+
+.image_div img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.section2{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.bio_div,
+.bio_text{
+    flex: 1;
+    padding: 10px;
+}
+
+.bio_div h2{
+    line-height: normal;
+    font-size: 38px;
+}
+
+.bio_text p{
+    font-size: 18px;
+    line-height: 1.6em;
+}
+
+
+.section3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+
+}
+.education_div,
+.education_texts{
+    flex: 1;
+    padding: 10px;
+}
+
+.education_div h2{
+    line-height: normal;
+    font-size: 38px;
+}
+
+.text_divv h2,
+.text_div2 h2{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 24px;
+}
+
+.text_divv p,
+.text_div2 p{
+    line-height: 1.6em;
+    font-size: 18px;
+    padding-bottom: 60px;
+}
+
+.education_texts hr{
+    height: 7px;
+    background-color: black;
+}

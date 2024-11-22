@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block body %}
+    <link rel="stylesheet" href="{% static 'login.css' %}">
+
+{% comment %}     
+    <div class="container">
+        <div class="register_form">
+            <form method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+            
+                <button class="reg_btn" type="submit">Qeydiyyatdan keç</button>
+                <a href="{% url 'account:login' %}">Eger hesabiniz varsa daxil olun</a>
+            </form>
+        </div>
+    </div> {% endcomment %}
+
+
+
+    
+
+<div class="section">
+            <div class="contact_div">
+                <div class="main_div">
+                    <h3>Daxil Olun</h3>
+
+                    <div class="form_div">
+                        <form action="#" method="post">
+                            {% csrf_token %}
+                            <div class="form-name">
+
+                                <input placeholder="Adınız..." type="text" id="name" name="username" >
+                            </div>
+
+                            <div class="form-name">
+
+                                <input placeholder="Şifrəniz..." type="password" id="name" name="password" >
+                            </div>
+
+                        
+                            
+                            <button type="submit" class="comment-btn">Daxil ol</button>
+                            
+                        </form>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="contact_div2">
+            
+                <div class="texts">
+                  <h2>Online Lesson</h2>
+                </div>
+
+                <div class="info">
+                    <p>Tədris dünyasında irəliləməyə<br> başlamaq üçün daxil olun!
+</p>
+                </div>
+           
+              
+
+               
+            </div>
+
+       </div>
+  </div>
+{% endblock %}
+
+
+
+{% comment %} 
+    <div class="name_input">
+                        <i class="fa-regular fa-user"></i>
+                        <input type="text" name="username" placeholder="Full Name">
+
+                    </div> {% endcomment %}
+
+
+
+
