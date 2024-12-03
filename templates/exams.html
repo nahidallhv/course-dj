@@ -9,58 +9,109 @@
     <div class="container">
         <div class="exams_type">
             <div class="exams">
-                <div class="img_div">   <img src="{% static 'images/math.svg' %}" alt=""></div>
-             
+                <div class="img_div">   
+                    <img src="{% static 'images/math.svg' %}" alt="">
+                    <div class="select-class">
+                        <button><a href="">8-9</a></button>
+                        <button><a href="">9-11</a></button>
+                    </div>
+                </div> 
                 <p>Riyaziyyat</p>
-                <a href="{% url 'exam:math_exam' %}"><button>Imtahana başla</button></a>
+                <a href="{% url 'exam:math_exam' %}"><button class="start">Başlamaq üçün tıklayın</button></a>
             </div>
 
+
             <div class="exams">
-                <div class="img_div"><img src="{% static 'images/open-book.png' %}" alt=""></div>
+                <div class="img_div">
+                    <img src="{% static 'images/open-book.png' %}" alt="">
+                    <div class="select-class">
+                        <button><a href="">8-9</a></button>
+                        <button><a href="">9-11</a></button>
+                    </div>
+                </div>
                 <p>Azərbaycan dili</p>
-                <button>Imtahana başla</button>
+                <button class="start">Başlamaq üçün tıklayın</button>
             </div>
 
             <div class="exams">
-                <div class="img_div"><img src="{% static 'images/science.svg' %}" alt=""></div>
+                <div class="img_div">
+                    <img src="{% static 'images/science.svg' %}" alt="">
+                    <div class="select-class">
+                        <button><a href="">8-9</a></button>
+                        <button><a href="">9-11</a></button>
+                    </div>
+                </div>
                 <p>Informatika</p>
-                <button>Imtahana başla</button>
+                <button class="start">Başlamaq üçün tıklayın</button>
             </div>
 
             <div class="exams">
-                <div class="img_div"> <img src="{% static 'images/open-book.png' %}" alt=""></div>
+                <div class="img_div"> 
+                    <img src="{% static 'images/open-book.png' %}" alt="">
+                    <div class="select-class">
+                        <button><a href="">8-9</a></button>
+                        <button><a href="">9-11</a></button>
+                    </div>
+                </div>
                 <p>Ingilis dili</p>
-                <button>Imtahana başla</button>
+                <button class="start">Başlamaq üçün tıklayın</button>
             </div>
             {% comment %} №№№№№№№№№№№№№№№№№№№№№№№№№ {% endcomment %}
 
             <div class="exams">
-                <div class="img_div"><img src="{% static 'images/math.svg' %}" alt=""></div>
+                <div class="img_div">
+                    <img src="{% static 'images/math.svg' %}" alt="">
+                    <div class="select-class">
+                        <button><a href="">8-9</a></button>
+                        <button><a href="">9-11</a></button>
+                    </div>
+                </div>
                 <p>Tarix</p>
-                <button>Imtahana başla</button>
+                <button class="start">Başlamaq üçün tıklayın</button>
             </div>
 
             <div class="exams">
-                <div class="img_div"><img src="{% static 'images/science.svg' %}" alt=""></div>
+                <div class="img_div">
+                    <img src="{% static 'images/science.svg' %}" alt="">
+                    <div class="select-class">
+                        <button><a href="">8-9</a></button>
+                        <button><a href="">9-11</a></button>
+                    </div>
+                </div>
                 <p>Fizika</p>
-                <button>Imtahana başla</button>
+                <button class="start">Başlamaq üçün tıklayın</button>
             </div>
 
             <div class="exams">
-                <div class="img_div"><img src="{% static 'images/open-book.png' %}" alt=""></div>
+                <div class="img_div">
+                    <img src="{% static 'images/open-book.png' %}" alt="">
+                    <div class="select-class">
+                        <button><a href="">8-9</a></button>
+                        <button><a href="">9-11</a></button>
+                    </div>
+                </div>
                 <p>Kimya</p>
-                <button>Imtahana başla</button>
+                <button class="start">Başlamaq üçün tıklayın</button>
             </div>
 
             <div class="exams">
-                <div class="img_div"> <img src="{% static 'images/math.svg' %}" alt=""></div>
+                <div class="img_div"> 
+                    <img src="{% static 'images/math.svg' %}" alt="">
+                    <div class="select-class">
+                        <button><a href="">8-9</a></button>
+                        <button><a href="">9-11</a></button>
+                    </div>
+                </div>
                 <p>Coğrafiya</p>
-                <button>Imtahana başla</button>
+                <button class="start">Başlamaq üçün tıklayın</button>
             </div>
 
 
         </div>
     </div>
+
+    <script src="{% static 'select-class.js' %}"></script>
+    
 
 {% endblock body %}
 

@@ -16,12 +16,11 @@
 .exams_type{
     margin-top: 20px;
     display: flex;
-    /* width: 100%; */
     gap: 25px;
     flex-wrap: wrap;
     margin-bottom: 80px;
-
 }
+
 .exams {
     margin-top: 50px;
     width: calc((100% - (25px * (4 - 1))) / 4);
@@ -36,35 +35,54 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
-/* Hover Efekti */
 .exams:hover {
-    transform: translateY(-5px); /* Kartı hafifçe yukarı kaldır */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Gölgeyi biraz daha belirgin yap */
-    border-color: #007bff; /* Çerçeve rengini maviye değiştir */
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    border-color: #007bff; 
 }
 
-
-
-.img_div{
+.img_div {
     width: 65%;
     height: auto;
+    position: relative; 
     cursor: pointer;
-
 }
-.img_div img{
+
+.img_div img {
     width: 100%;
     object-fit: cover;
     border-radius: 6px;
+    transition: opacity 0.5s ease; 
+}
+.select-class {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none; 
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
 }
 
-.exams p{
+
+.start:hover .select-class {
+    display: flex;
+}
+
+.start:hover .img_div img {
+    opacity: 0.2;
+}
+
+.exams p {
     font-family: 'Times New Roman', Times, serif;
     font-size: 24px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.exams button{
+.start {
     width: 150px;
     letter-spacing: 1px;
     height: 50px;
@@ -74,12 +92,36 @@
     font-size: 16px;
     cursor: pointer;
     font-family: 'Times New Roman', Times, serif;
-    background-color: rgb(25 42 136);
+    background-color: rgb(25, 42, 136);
 }
 
-.exams button:hover{
-    transition: 1.2s;
-    color:  rgb(25 42 136);
+.start:hover {
+    transition: .4s;
+    color: rgb(25, 42, 136);
     background-color: white;
-    border: 1px solid  rgb(25 42 136);
+    border: 1px solid rgb(25, 42, 136);
+}
+
+.select-class button {
+    width: 140px;
+    height: 50px;
+    font-size: 16px;
+    background-color: rgb(25, 42, 136);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.select-class button a{
+    color: white;
+}
+
+.select-class button:hover {
+    background-color: white;
+    border: 1px solid rgb(25, 42, 136);
+}
+
+.select-class button:hover a{
+    color: rgb(25, 42, 136);
 }
