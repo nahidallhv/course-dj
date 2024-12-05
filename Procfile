@@ -1,0 +1,1 @@
+web: gunicorn course.core.wsgi:application
