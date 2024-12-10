@@ -5,6 +5,7 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    border: 1px solid red;
 }
 
 .container{
@@ -19,6 +20,7 @@
     gap: 25px;
     flex-wrap: wrap;
     margin-bottom: 80px;
+    justify-content: space-around;
 }
 
 .exams {
@@ -66,6 +68,13 @@
     text-align: center;
 }
 
+/* .exams:hover .select-class {
+    display: flex;
+}
+
+.exams:hover .img_div img {
+    opacity: 0.2;
+} */
 
 .start:hover .select-class {
     display: flex;
@@ -84,8 +93,9 @@
 
 .start {
     width: 150px;
+    max-width: 90%;
     letter-spacing: 1px;
-    height: 50px;
+    height: 60px;
     border: hidden;
     border-radius: 5px;
     color: white;

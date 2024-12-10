@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="../static/images/course-fav-icon.png">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/base-repo.css' %}">
+    <link rel="stylesheet" href="{% static 'css/hidden-part.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <title>Document</title>
 </head>
@@ -25,7 +27,7 @@
             <li><a href="{% url 'exam:exams' %}">İmtahanlar</a></li>
             <li><a href="{% url 'about' %}">Haqqımızda</a></li>
             <li><a href="{% url 'contact' %}">Əlaqə</a></li>
-            <li></li>
+            <!-- <li></li> -->
             {% if request.user.is_authenticated %}
         
                 <div class="logout_div">
@@ -36,17 +38,42 @@
                 
                       <i class="fa-solid fa-circle-user"></i>
                 
-                      <a href="{% url 'account:register' %}" class="login">Qeydiyyatdan kec</a>
+                      <a href="{% url 'account:register' %}" class="login">Qeydiyyat</a>
                     </li> 
                 {% endif %}
        
           </ul>
 
-          <div class="menu-icon" onclick="toggleMenu()">
+          <div class="hidden-part">
+            <!-- <div class="hidden-part-flex"> -->
+                <div class="dropdown-hidden">
+                      
+                      <button class="dropbtn-hidden" id="menu-toggle">
+                        <i class="fa-solid fa-bars" id="menu-icon"></i>
+                    </button>
+
+                    <div class="dropdown-content-hidden">
+                      <a href="{% url 'home' %}">Ana səhifə</a>
+                      <a href="{% url 'video' %}">Video dərslər</a>
+                      <a href="{% url 'exam:exams' %}">İmtahanlar</a>
+                      <a href="{% url 'about' %}">Haqqımızda</a>
+                      <a href="{% url 'contact' %}">Əlaqə</a>
+                      {% if user.is_authenticated %}
+                          <a href="{% url 'account:logout' %}">Çıxış edin<i class="fa-solid fa-right-from-bracket"></i></a>
+                        {% else %}
+                          <a href="{% url 'account:login' %}">Qeydiyyat<i class="fa-solid fa-right-to-bracket"></i></a>
+                      {% endif %}
+                    </div>
+                </div>
+            <!-- </div> -->
+        </div>  
+        
+
+          <!-- <div class="menu-icon" onclick="toggleMenu()">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
-          </div>
+          </div> -->
         </nav>
       </header>
     </div>
@@ -57,7 +84,7 @@
     {% endblock body %}
 
 
-    <div class="container">
+    <!-- <div class="container"> -->
         <footer class="footer">
         <div class="footer-logo">
           <div class="logo">
@@ -66,6 +93,10 @@
             </div>
             <h1 class="logo-text">Online Lessons</h1>
           </div>
+        </div>
+        <div class="footer-contact">
+          <p>info@mysite.com</p>
+          <p>123-456-7890</p>
         </div>
         <div class="footer-links">
           <ul>
@@ -76,20 +107,17 @@
             <li><a href="#learning-tools">Learning Tools</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
-        </div>
-        <div class="footer-contact">
-          <p>info@mysite.com</p>
-          <p>123-456-7890</p>
-        </div>
+        </div>  
         <div class="footer-copy">
           <p>© 2024 by Online Lessons.</p>
           <p>Powered and secured by Online Lessons</p>
         </div>
       </footer>
-    </div>
+    <!-- </div> -->
     </div>
     
 
+    <script src="{% static 'js/hidden-part.js' %}"></script>
 
     
 </body>

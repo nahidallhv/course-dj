@@ -1,0 +1,34 @@
+@media (max-width:1024px){
+    
+}
+
+
+
+
+@media (max-width: 768px) {
+    .video-grid {
+      grid-template-columns: repeat(2, 1fr);
+      margin: 40px 0 0;
+    }
+    
+    h1{
+        font-size: 2rem;
+    }
+  }
+  
+@media (max-width: 468px){
+    .video-grid {
+      grid-template-columns: auto;
+    }
+
+    h1{
+        font-size: 1.7rem;
+    }
+  }
+
+@media (max-width: 376px){
+    h1{
+        font-size: 1.5rem;
+    }
+}
+  

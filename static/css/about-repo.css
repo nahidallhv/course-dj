@@ -1,0 +1,119 @@
+@media (max-width:1024px){
+    
+    .text_div h2{
+        font-size: 50px;
+    }
+
+    .text_div p{
+        font-size: 1.5rem;
+    }
+
+
+    .section2, .section3{
+        flex-direction: column !important;
+        padding-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    .bio_div h2, .education_div h2{
+        font-size: 36px;
+    }
+    
+
+}
+@media (max-width:768px){
+
+    .section1{
+        flex-direction: column;
+    }
+
+    .image_div img{
+        min-width: 250px;
+    }
+    .text_div h2{
+        font-size: 35px;
+    }
+
+    .text_div p{
+        font-size: 1.2rem;
+        margin: 20px 0 0;
+        width: 100%;
+
+    }
+    .bio_div h2, .education_div h2{
+        font-size: 32px;
+
+    }
+
+    
+    .education_texts hr{
+        height: 5px;
+    }
+
+    .text_div, .text_div h2 {
+        width: 80%;
+    }
+}
+
+@media (max-width:480px){
+    
+    .text_div h2{
+        font-size: 28px;
+    }
+    
+    .text_div p{
+        font-size: 1.1rem;
+        width: 100%;
+    }
+
+    .bio_div h2, .education_div h2{
+        font-size: 30px;
+    }
+
+
+    .text_divv p, .text_div2 p{
+        padding-bottom: 40px;
+    }
+
+    
+    .education_texts hr{
+        height: 4px;
+    }
+}
+@media (max-width:376px){
+    .text_div h2{
+        font-size: 24px;
+    }
+
+    .text_div p{
+        font-size: 1rem;
+    }
+
+
+    .bio_div h2, .education_div h2{
+        font-size: 28px;
+    }
+    
+    .text_divv h2, .text_div2 h2{
+        font-size: 24px;
+    }
+    
+    .text_divv p, .text_div2 p{
+        font-size: 18px;
+        padding-bottom: 20px;
+
+    }
+
+    .education_texts hr{
+        height: 3px;
+    }
+
+}
+
+
+
+
+
+
+
+

@@ -42,12 +42,12 @@ function currentSlide(n) {
 
 
 // ###############################################
-window.addEventListener("scroll", () => {
-  const scrollY = window.scrollY;
+// window.addEventListener("scroll", () => {
+//   const scrollY = window.scrollY;
 
-  // Öğeleri kaydırmaya göre hareket ettir
-  document.querySelector(".left-content").style.transform = `translateY(${scrollY * 0.3}px)`;
-  document.querySelector(".right-content").style.transform = `translateY(${scrollY * 0.5}px)`;
-  document.querySelector(".teaching-section").style.transform = `translateY(${scrollY * 0.1}px)`;
-  // document.querySelector(".reviews-section").style.transform = `translateY(${scrollY * 0.2}px)`;
-});
+//   // Öğeleri kaydırmaya göre hareket ettir
+//   document.querySelector(".left-content").style.transform = `translateY(${scrollY * 0.3}px)`;
+//   document.querySelector(".right-content").style.transform = `translateY(${scrollY * 0.5}px)`;
+//   document.querySelector(".teaching-section").style.transform = `translateY(${scrollY * 0.1}px)`;
+//   // document.querySelector(".reviews-section").style.transform = `translateY(${scrollY * 0.2}px)`;
+// });

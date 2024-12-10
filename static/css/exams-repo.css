@@ -1,0 +1,72 @@
+@media (max-width:1024px){
+    
+    .exams p{
+        font-size: 18px;
+    }
+
+    .start{
+        font-size: 18px;
+    }
+    
+    .logo{
+        flex-direction: column;
+        gap: 0;
+    }
+
+}
+
+
+@media (max-width:768px){
+    .exams{
+        width: calc((100% - (25px * (4 - 1))) / 2);
+    }
+
+    .exams_type{
+        flex-direction: space-between;
+    }
+
+
+}
+
+
+
+@media (max-width:480px){
+
+    .start{
+        font-size: 16px;
+    }
+
+    .exams{
+        margin-top: 30px;
+    }
+
+}
+
+
+@media (max-width:376px){
+    
+    .exams{
+        width: calc((100% - (25px * (4 - 1))));
+        margin-top: 20px;
+    }
+    
+    .exams_type{
+        justify-content: center;
+    
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

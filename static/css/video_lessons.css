@@ -4,6 +4,7 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  border: 1px solid red;
 }
 
 .container {
@@ -77,16 +78,4 @@ h1 {
 
 .video-link:hover .video-title {
   color: #1c0d7d;
-}
-
-@media (max-width: 768px) {
-  .video-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  .video-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
