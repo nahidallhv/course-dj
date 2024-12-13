@@ -85,6 +85,13 @@
 
 @media (max-width: 480px){
     
+    .reviews-right{
+        width: 100%;
+    }
+
+    .slides{
+        width: 100%;
+    }
     .left-content h1{
         font-size: 1.3rem;
     }

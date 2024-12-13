@@ -191,6 +191,10 @@
   .login{
     font-size: 16px;
   }
+
+  .form-name{
+    width: 310px;
+  }
 }
 
 @media (max-width: 376px){
